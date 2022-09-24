@@ -7,6 +7,10 @@ def button_click():
     value_a = g.get_value()
     value_b = g.get_value()
     func = g.get_function()
+
+    db.get_storage(value_a)
+    db.get_storage(value_b)  
+
     m.init(value_a, value_b)
     match func:
         case 1:
